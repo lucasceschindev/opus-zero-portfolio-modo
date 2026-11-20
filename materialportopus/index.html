@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff9f0">
+  <meta name="description" content="SOLA — floricultura fictícia para demonstração de experiência de compra criada pela Opus Zero. Explore arranjos e monte um presente de forma interativa.">
+  <meta property="og:title" content="SOLA — Flores para sentir de perto | Portfólio Opus Zero">
+  <meta property="og:description" content="Uma experiência demonstrativa de e-commerce de flores, criada como projeto de portfólio da Opus Zero.">
+  <meta property="og:type" content="website">
+  <title>SOLA — Flores para sentir de perto | Projeto conceito Opus Zero</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#principal">Ir para o conteúdo</a>
+  <div class="notice"><span>✳</span> Um presente nunca é só um presente. <span class="notice-sep">/</span> <strong>Conceito fictício para portfólio</strong><span>✳</span></div>
+  <header class="header" id="topo">
+    <div class="wrap nav">
+      <a href="#topo" class="logo" aria-label="SOLA, início">sola<span class="logo-flower">✳</span><small>estúdio floral</small></a>
+      <nav class="nav-links" id="main-nav" aria-label="Navegação principal">
+        <a href="#colecao">Buquês</a>
+        <a href="#sobre">Nossa ideia</a>
+        <a href="#monte">Monte um presente</a>
+      </nav>
+      <div class="nav-right">
+        <a href="#colecao" class="nav-shop">Explorar a coleção <span aria-hidden="true">↗</span></a>
+        <button class="cart-button" id="open-cart" type="button" aria-label="Abrir sacola de compras simulada">Sacola <span id="cart-count" aria-live="polite">0</span></button>
+        <button class="menu-button" id="menu-button" type="button" aria-label="Abrir menu" aria-controls="main-nav" aria-expanded="false"><i></i><i></i></button>
+      </div>
+    </div>
+  </header>
+  <main id="principal">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-left">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="sun-icon">✳</span> UM POUCO DE FLOR MUDA TUDO</p>
+          <h1 id="hero-title">Tem coisa que só <em>flor</em> consegue dizer.</h1>
+          <p class="hero-text">Para o dia comum ficar especial. Para o carinho virar gesto. Flores cheias de cor, afeto e boas histórias.</p>
+          <div class="hero-actions"><a href="#colecao" class="pill pill-dark">Escolher um buquê <span aria-hidden="true">↗</span></a><a href="#sobre" class="text-link">Conheça a nossa ideia <span aria-hidden="true">↓</span></a></div>
+          <div class="handwritten">florescem encontros <span>♡</span></div>
+        </div>
+        <span class="hero-index">ESTÚDIO FLORAL / CONCEITO 01</span>
+      </div>
+      <div class="hero-right">
+        <div class="arch arch-back"></div>
+        <div class="arch arch-front"></div>
+        <span class="hero-arc-label">FEITO COM AFETO • FEITO COM AFETO •</span>
+        <img src="assets/flores-solar.svg" alt="Ilustração colorida de um buquê de flores em um vaso de cerâmica" class="hero-bouquet" fetchpriority="high">
+        <div class="hero-tag"><span>Um motivo a mais</span><strong>pra sorrir.</strong><b>✳</b></div>
+        <span class="hero-right-number">01 / 04</span>
+      </div>
+      <div class="hero-ticker" aria-hidden="true"><div>SE É PRA DIZER ALGO, DIGA COM FLORES <span>✳</span> SE É PRA DIZER ALGO, DIGA COM FLORES <span>✳</span> SE É PRA DIZER ALGO, DIGA COM FLORES <span>✳</span></div></div>
+    </section>
+
+    <section class="intro wrap" id="sobre" aria-labelledby="intro-title">
+      <p class="small-caps">01 / UM JEITO MAIS BONITO DE PRESENTEAR</p>
+      <div class="intro-inner">
+        <h2 id="intro-title">Flores pra hoje.<br><em>Memórias pra sempre.</em></h2>
+        <div class="intro-right"><p>Na SOLA, cada arranjo é pensado como uma pequena celebração. Um jeito simples de lembrar que os detalhes fazem diferença.</p><p class="demo-note">Este é um conceito de marca fictícia desenvolvido pela <strong>Opus Zero</strong>. Não vendemos flores nem realizamos entregas.</p></div>
+      </div>
+    </section>
+
+    <section class="collection" id="colecao" aria-labelledby="collection-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="small-caps">02 / ESCOLHAS DA ESTAÇÃO</p><h2 id="collection-title">A coleção <em>mais querida.</em></h2></div><p>Quatro jeitos diferentes de transformar um dia qualquer em lembrança.</p></div>
+        <div class="filters" role="group" aria-label="Filtrar coleção">
+          <button type="button" class="filter active" data-filter="todos" aria-pressed="true">Todos os arranjos <span>04</span></button>
+          <button type="button" class="filter" data-filter="vibrantes" aria-pressed="false">Coloridos</button>
+          <button type="button" class="filter" data-filter="suaves" aria-pressed="false">Delicados</button>
+        </div>
+        <div class="product-grid">
+          <article class="product" data-category="vibrantes" data-id="solar"><div class="product-visual shade-peach"><span class="product-badge">O MAIS SOLAR ☀</span><img src="assets/flores-solar.svg" alt="Ilustração do arranjo Solar, com flores coral, amarelas e rosadas" loading="lazy"><button type="button" class="plus" data-add="solar" aria-label="Adicionar arranjo Solar à sacola">+</button></div><div class="product-meta"><div><h3>Solar</h3><p>Para iluminar qualquer momento.</p></div><strong>R$ 129</strong></div></article>
+          <article class="product" data-category="suaves" data-id="bruma"><div class="product-visual shade-lilac"><span class="product-badge">LEVE & DOCE</span><img src="assets/flores-bruma.svg" alt="Ilustração do arranjo Bruma, com flores lilases e rosadas" loading="lazy"><button type="button" class="plus" data-add="bruma" aria-label="Adicionar arranjo Bruma à sacola">+</button></div><div class="product-meta"><div><h3>Bruma</h3><p>Delicadeza em cada detalhe.</p></div><strong>R$ 139</strong></div></article>
+          <article class="product" data-category="vibrantes" data-id="aurora"><div class="product-visual shade-yellow"><span class="product-badge">UM BOM DIA</span><img src="assets/flores-aurora.svg" alt="Ilustração do arranjo Aurora, com flores claras e amarelas" loading="lazy"><button type="button" class="plus" data-add="aurora" aria-label="Adicionar arranjo Aurora à sacola">+</button></div><div class="product-meta"><div><h3>Aurora</h3><p>Uma manhã inteira de carinho.</p></div><strong>R$ 119</strong></div></article>
+          <article class="product" data-category="suaves" data-id="jardim"><div class="product-visual shade-rose"><span class="product-badge">AQUELE ABRAÇO</span><img src="assets/flores-jardim.svg" alt="Ilustração do arranjo Jardim, com flores em tons de rosa" loading="lazy"><button type="button" class="plus" data-add="jardim" aria-label="Adicionar arranjo Jardim à sacola">+</button></div><div class="product-meta"><div><h3>Jardim</h3><p>Afeto que fica perto.</p></div><strong>R$ 149</strong></div></article>
+        </div>
+        <p class="small-print">Arranjos, disponibilidade e valores são ilustrativos. Os botões simulam uma experiência de e-commerce, sem compra real.</p>
+      </div>
+    </section>
+
+    <section class="story" aria-labelledby="story-title">
+      <div class="story-visual"><div class="story-flower-shape one"></div><div class="story-flower-shape two"></div><img src="assets/flores-jardim.svg" alt="Ilustração de flores rosadas usadas para representar o trabalho artesanal"><p class="hand-vertical">um carinho em forma de flor ♡</p></div>
+      <div class="story-copy"><p class="small-caps">03 / SOBRE ESCOLHER COM CARINHO</p><h2 id="story-title">Não precisa de data especial para fazer alguém <em>florescer.</em></h2><p>Um gesto pequeno pode mudar o humor da semana. Por isso imaginamos uma experiência simples: escolher, personalizar e presentear com leveza.</p><a href="#monte" class="pill pill-light">Monte seu presente <span aria-hidden="true">↗</span></a><span class="story-scribble">flores + afeto + você ✳</span></div>
+    </section>
+
+    <section class="builder wrap" id="monte" aria-labelledby="builder-title">
+      <div class="builder-head"><div><p class="small-caps">04 / UM PRESENTE DO SEU JEITO</p><h2 id="builder-title">Bora montar <em>um carinho?</em></h2></div><p>Experimente como seria personalizar o presente antes de comprar. Tudo acontece aqui no navegador.</p></div>
+      <div class="builder-layout">
+        <form class="builder-form" id="gift-form">
+          <fieldset><legend><span>01.</span> Qual a ocasião?</legend><div class="choice-row" data-group="occasion"><label><input type="radio" name="occasion" value="Só porque sim" checked><span>Só porque sim ♡</span></label><label><input type="radio" name="occasion" value="Aniversário"><span>Aniversário</span></label><label><input type="radio" name="occasion" value="Agradecimento"><span>Obrigado!</span></label></div></fieldset>
+          <fieldset><legend><span>02.</span> Qual a vibe?</legend><div class="choice-row palettes"><label><input type="radio" name="palette" value="solar" checked><span><i class="pal-solar"></i> Alegre</span></label><label><input type="radio" name="palette" value="bruma"><span><i class="pal-bruma"></i> Delicada</span></label><label><input type="radio" name="palette" value="jardim"><span><i class="pal-jardim"></i> Romântica</span></label></div></fieldset>
+          <fieldset><legend><span>03.</span> Qual o tamanho?</legend><div class="choice-row"><label><input type="radio" name="size" value="p" checked><span>Um mimo <small>R$ 89</small></span></label><label><input type="radio" name="size" value="m"><span>Um abraço <small>R$ 129</small></span></label><label><input type="radio" name="size" value="g"><span>Um festão <small>R$ 189</small></span></label></div></fieldset>
+          <button type="submit" class="pill pill-dark builder-submit">Adicionar à sacola fictícia <span>↗</span></button>
+          <p class="small-print">Nenhum dado pessoal é solicitado ou enviado. Não há pagamentos, pedidos ou entregas reais.</p>
+        </form>
+        <aside class="builder-preview" aria-live="polite"><div class="preview-stamp">FEITO PRA SENTIR / SOLA</div><div class="preview-plant"><img src="assets/flores-solar.svg" id="preview-image" alt="Prévia ilustrada do arranjo personalizado"></div><div class="preview-info"><div><span id="preview-occasion">Só porque sim ♡</span><strong id="preview-size">Um mimo</strong></div><div><span>Total ilustrativo</span><strong class="preview-price" id="preview-price">R$ 89</strong></div></div></aside>
+      </div>
+    </section>
+
+    <section class="steps"><div class="wrap"><div class="steps-title"><p class="small-caps">05 / EXPERIÊNCIA SEM COMPLICAÇÃO</p><h2>Do clique ao <em>sorriso.</em></h2></div><div class="steps-grid"><div><b>01</b><span>✿</span><h3>Escolha com calma</h3><p>Explore as flores e encontre a combinação que mais combina com o momento.</p></div><div><b>02</b><span>♡</span><h3>Dê seu toque</h3><p>Teste ocasião, paleta e tamanho em uma interface simples e responsiva.</p></div><div><b>03</b><span>✳</span><h3>Veja o resumo</h3><p>Adicione à sacola demonstrativa e confira o total, sem pagamento real.</p></div></div></div></section>
+
+    <section class="closing" aria-labelledby="closing-title"><div class="wrap closing-inner"><p class="small-caps">QUANDO FOR DIFÍCIL DIZER...</p><h2 id="closing-title">Deixe as flores <em>falarem.</em></h2><a href="#colecao" class="pill pill-light">Voltar aos arranjos <span>↗</span></a><div class="closing-ornament">✳</div></div></section>
+  </main>
+  <footer class="footer"><div class="wrap"><div class="footer-main"><a href="#topo" class="logo footer-logo">sola<span class="logo-flower">✳</span><small>estúdio floral</small></a><p>Um pequeno universo fictício de flores, carinho e interfaces bem pensadas.</p><div class="footer-links"><a href="#colecao">Coleção</a><a href="#sobre">O conceito</a><a href="#monte">Monte seu presente</a></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> SOLA. Marca fictícia — projeto demonstrativo.</span><span>Design & desenvolvimento demonstrativo: <a href="https://opuszero.netlify.app/" rel="noopener noreferrer" target="_blank">Opus Zero ↗</a></span></div></div></footer>
+  <div class="cart-backdrop" id="cart-backdrop" hidden></div>
+  <aside class="drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" tabindex="-1" hidden>
+    <div class="drawer-head"><div><p class="small-caps">SACOLA DE CARINHOS</p><h2 id="drawer-title">Seus escolhidos <em>♡</em></h2></div><button type="button" class="close-drawer" id="close-cart" aria-label="Fechar sacola">×</button></div>
+    <p class="drawer-note">Demonstração: nenhum item pode ser comprado de verdade.</p>
+    <div class="cart-items" id="cart-items" aria-live="polite"><p class="cart-empty">Sua sacola está vazia por enquanto.</p></div>
+    <div class="drawer-bottom"><div class="cart-total"><span>Total demonstrativo</span><strong id="cart-total">R$ 0</strong></div><button type="button" class="pill pill-dark" id="clear-cart">Esvaziar sacola <span>↗</span></button><p>Sem checkout, sem cobrança e sem envio de dados.</p></div>
+  </aside>
+</body>
+</html>

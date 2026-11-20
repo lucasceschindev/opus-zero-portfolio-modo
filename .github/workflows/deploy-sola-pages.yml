@@ -36,6 +36,11 @@ jobs:
         with:
           path: "./materialportopus"
 
+      - name: Aguardar propagação do artefato no GitHub
+        run: |
+          echo "Pacote enviado. Aguardando disponibilidade pela API antes do deploy."
+          sleep 30
+
       - name: Publicar no GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
